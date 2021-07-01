@@ -1,0 +1,62 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "提交成功";
+    Layout = null;
+}
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.css"/>
+    <link rel="stylesheet" href="~/Content/bootstrap-theme.css"/>
+    <link rel="stylesheet" href="~/Content/bootstrap-select.min.css"/>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-image: url(/images/login-background.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .question {
+        margin-top: 6px;
+        margin-bottom: 15px;
+    }
+
+    .question-num { font-size: 1.2em; }
+
+    .question-title { font-size: 1.2em; }
+
+    .question-tag { font-size: 1.2em; }
+
+    .option-list {
+        margin-top: 9px;
+        margin-bottom: 6px;
+        margin-left: 2em;
+    }
+
+    body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .body-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .bottom-bar { margin-bottom: 20px; }
+</style>
+<body>
+<div class="container body-content col-lg-6 col-lg-offset-3" style="background-color: white; border-radius: 9px">
+    <div align="center">
+        <h2 id="surveyTitle">您的答卷已经提交，感谢您的参与！</h2>
+        
+        <a href="/" style="font-size: 1.2em; margin-top: 2em;">返回首页>></a>
+    </div>
+
+</div>

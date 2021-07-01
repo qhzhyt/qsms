@@ -1,0 +1,228 @@
+﻿@{
+    ViewBag.Title = "问卷统计-" + ViewData["title"];
+    Layout = "_Layout.cshtml";
+    ViewData["bodyAttrs"] = "style=\"background-image: url(/images/login-background.jpg);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;\"";
+}
+
+@section css
+{
+    <style type="text/css">
+        
+        
+        .wenjuan-info { background: white; }
+
+        .wenjuan-info .list-group-item.active {
+            background: white;
+            color: tomato;
+            margin-left: 0;
+            margin-right: 0;
+        }
+         
+         
+        .wenjuan-info-list {
+            margin-left: 1em;
+            margin-top: 0.6em;
+            font-size: 1.2em;
+        }
+
+        .wenjuan-info-item { padding: 0.2em; }
+
+        .wenjuan-info-item a {
+
+            font-size: 0.9em;
+            margin-left: 2em;
+        }
+
+        .count-info-div {
+            background: white;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            margin-top: 0.6em;
+        }
+
+        .count-info { background: white; }
+
+        .question-title-div {
+            font-size: 1.2em;
+            color: black;
+        }
+
+        .count-info-div .question-option-count { }
+
+        /* .count-info-div .question-option-count table { */
+
+        /*     padding-left: 0.6em; */
+
+        /*     padding-right: 1.2em; */
+
+        /* } */
+
+        .count-info-div .question-option-count thead { background-color: #e4e7eb; }
+
+        .count-info-div .question-option-count tbody { background-color: #f7fafc; }
+        
+    </style>
+
+
+}
+
+
+<div class="container">
+    <ul id="toolbar" class="breadcrumb" style="height: 46px; font-size: 1.6em">
+        <li class="active">@ViewData["title"]</li>
+    </ul>
+
+    <div class="list-group wenjuan-info">
+        <span class="list-group-item">
+            <h4 class="list-group-item-heading">
+                问卷信息
+            </h4>
+        </span>
+        <ul class="list-unstyled wenjuan-info-list">
+            <li class="wenjuan-info-item">问卷名称:<span id="wj-info-title"></span></li>
+            <li class="wenjuan-info-item">创建时间:<span id="wj-info-create-time"></span></li>
+            <li class="wenjuan-info-item">问题数量:<span id="wj-info-question-count"></span></li>
+            <li class="wenjuan-info-item">答卷数量:<span id="wj-info-reply-count"></span><a id="view-all-results" href="#">查看答卷>></a></li>
+        </ul>
+    </div>
+
+    <div class="list-group count-info">
+        <span class="list-group-item">
+            <h4 class="list-group-item-heading">
+                统计信息
+            </h4>
+        </span>
+
+        <div id="count-info-list" class="list-unstyled">
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<div style="display: none">
+
+    <div class="count-info-div" id="count-info-item-example">
+        <div class="question-title-div">
+            <span class="question-title-num"></span><span class="question-title"></span><span class="question-type" style="color: #aaaaaa; font-size: 0.9em;"></span>
+        </div>
+
+        <div class="question-option-count">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th style="width: 50%">选项</th>
+                    <th style="width: 25%">统计</th>
+                    <th style="width: 25%">比例</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+
+        </div>
+
+        <div class="question-result-total"></div>
+
+        <hr style="border: 1px dashed #aaaaaa"/>
+    </div>
+
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+        var wenjuanInfo = @Html.Raw(ViewData["wenjuan"]);
+        var replyCount = @ViewData["replyCount"];
+        var qType = ["[填空题]", "[多选题]", "[单选题]"];
+
+        function loadPage() {
+            $("#wj-info-title").html(wenjuanInfo.title);
+            $("#wj-info-create-time").html(wenjuanInfo.createTime.substr(0, 19));
+            $("#wj-info-question-count").html(wenjuanInfo.questions.length);
+            $("#wj-info-reply-count").html(replyCount);
+            $("#view-all-results").attr("href", "/Wenjuan/ViewResults?id=" + wenjuanInfo.qnId);
+
+            var questionList = $("#count-info-list");
+
+            for (var i = 0; i < wenjuanInfo.questions.length; i++) {
+                var question = wenjuanInfo.questions[i];
+
+                var oneQuestion = $("#count-info-item-example").clone();
+                var resultCount = question.resultCount;
+
+                oneQuestion.removeAttr("id");
+                oneQuestion.find(".question-title-num").html("第" + (i + 1) + "题:");
+                oneQuestion.find(".question-title").html(question.question);
+                oneQuestion.find(".question-type").html(qType[question.type]);
+
+                oneQuestion.find(".question-result-total").html("有效回答人数:" + resultCount);
+
+                
+
+                var table = oneQuestion.find(".question-option-count table")[0];
+                if (question.type == 0) {
+                    $(table).empty();
+                    $(table).append(
+                        "<thead><tr><th style=\"width:75%\">答案文本</th> <th style=\"width:25%\">答卷</th></tr></thead><tbody></tbody>");
+                    var tbody = $($(table).find("tbody")[0]);
+                    for (var j = 0; j < question.results.length; j++) {
+                        var result = question.results[j];
+                        var t = result.split(":::");
+                        if (t.length < 2)
+                            continue;
+                        
+                        //console.log(option);
+                        var row = "<tr>" +
+                            "<td>" +
+                            t[0] +
+                            "</td>" +
+                            "<td>" +
+                            "<a href=\"/Wenjuan/ViewResult?id="+t[1]+"#question-"+(i+1)+"\">查看</a>"+
+                            "</td>" +
+                            " </tr>";
+                        tbody.append(row);
+                    }
+                } else {
+                    var tbody = oneQuestion.find(".question-option-count tbody")[0];
+                    for (var j = 0; j < question.options.length; j++) {
+                        
+                        var option = question.options[j];
+                        var row = "<tr>" +
+                            "<td>" +
+                            option.optionContent +
+                            "</td>" +
+                            "<td>" +
+                            option.count +
+                            "</td>" +
+                            "<td>" +
+                            (option.count / resultCount * 100).toFixed(2) +
+                            "%" +
+                            "</td>" +
+                            " </tr>";
+                        $(tbody).append(row);
+                    }
+                }
+                    
+
+                questionList.append(oneQuestion);
+            }
+
+           
+        }
+
+        $(function() {
+            loadPage();
+        });
+
+
+    </script>
+
+
+}

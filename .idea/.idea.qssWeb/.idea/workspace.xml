@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/qssWeb/Views/Wenjuan/Edit.cshtml" line="305" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6ddd26e2-0131-4e6e-9957-3d78806e5582" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="false" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="true" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="qss: database" type="bdf80c8a:MssqlImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="qss: database" type="bdf80c8a:MssqlImplModel$Database" />
+        <item name="questionnaires: table" type="a00791b9:MssqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="qss: database" type="bdf80c8a:MssqlImplModel$Database" />
+        <item name="results: table" type="a00791b9:MssqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="WenjuanController.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qssWeb/Controllers/WenjuanController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3165">
+              <caret line="219" column="53" selection-start-line="219" selection-start-column="53" selection-end-line="219" selection-end-column="53" />
+              <folding>
+                <marker date="1526617491519" expanded="false" signature="6:245" ph="..." />
+                <marker date="1526617491519" expanded="true" signature="275:9043" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="329:9041" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="441:541" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="579:626" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="681:1499" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="1016:1322" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="1143:1261" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="1535:2230" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="1629:1730" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="1819:1920" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="1980:2081" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="2302:3666" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="2527:2590" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="2696:2759" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="2788:3623" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="3015:3246" ph="/* db.Questionnaires ... */" />
+                <marker date="1526617491519" expanded="true" signature="3703:6295" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="3797:3898" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="3985:4086" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="4145:4246" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="4836:5978" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="4990:5057" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="5148:5630" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="5227:5612" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="5366:5463" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="5651:5929" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="5781:5856" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="6338:7078" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="6432:6533" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="6620:6721" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="6780:6881" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="7128:9026" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="7222:7323" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="7482:7583" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="7705:7806" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="8071:8905" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="8392:8474" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="8512:8891" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="8645:8873" ph="{...}" />
+                <marker date="1526617491519" expanded="true" signature="8721:8826" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Result.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qssWeb/Models/Result.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+              <folding>
+                <marker date="1526716052045" expanded="true" signature="6:189" ph="..." />
+                <marker date="1526716052045" expanded="true" signature="240:1561" ph="{...}" />
+                <marker date="1526716052045" expanded="true" signature="550:984" ph="{...}" />
+                <marker date="1526716052045" expanded="true" signature="816:940" ph="{...}" />
+                <marker date="1526716052045" expanded="true" signature="1058:1271" ph="{...}" />
+                <marker date="1526716052045" expanded="true" signature="1331:1546" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResultItem.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qssWeb/Models/ResultItem.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+              <folding>
+                <marker date="1525449293845" expanded="true" signature="99:286" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Wenjuan.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qssWeb/Models/Wenjuan.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+              <folding>
+                <marker date="1526020777201" expanded="false" signature="6:283" ph="..." />
+                <marker date="1526020777201" expanded="true" signature="335:4971" ph="{...}" />
+                <marker date="1526020777201" expanded="true" signature="897:930" ph="{...}" />
+                <marker date="1526020777201" expanded="true" signature="983:1684" ph="{...}" />
+                <marker date="1526020777201" expanded="true" signature="1569:1674" ph="{...}" />
+                <marker date="1526020777201" expanded="true" signature="1737:1945" ph="{...}" />
+                <marker date="1526020777201" expanded="true" signature="1973:2597" ph="{...}" />
+                <marker date="1526020777201" expanded="true" signature="2047:2168" ph="{...}" />
+                <marker date="1526020777201" expanded="true" signature="2488:2587" ph="{...}" />
+                <marker date="1526020777201" expanded="true" signature="2713:3209" ph="{...}" />
+                <marker date="1526020777201" expanded="true" signature="2986:3043" ph="{...}" />
+                <marker date="1526020777201" expanded="true" signature="3263:3738" ph="{...}" />
+                <marker date="1526020777201" expanded="true" signature="3561:3613" ph="{...}" />
+                <marker date="1526020777201" expanded="true" signature="3818:4783" ph="{...}" />
+                <marker date="1526020777201" expanded="true" signature="4234:4743" ph="{...}" />
+                <marker date="1526020777201" expanded="true" signature="4472:4642" ph="{...}" />
+                <marker date="1526020777201" expanded="true" signature="4820:4956" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewResults.cshtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qssWeb/Views/Wenjuan/ViewResults.cshtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="42" column="73" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
+              <folding>
+                <marker date="1526716514997" expanded="true" signature="36:357" ph="@..." />
+                <marker date="1526716514997" expanded="true" signature="359:507" ph="@{...}" />
+                <marker date="1526716514997" expanded="true" signature="378:505" ph="&lt;style.../&gt;" />
+                <marker date="1526716514997" expanded="true" signature="537:750" ph="&lt;ul.../&gt;" />
+                <marker date="1526716514997" expanded="true" signature="756:1802" ph="&lt;div.../&gt;" />
+                <marker date="1526716514997" expanded="true" signature="802:1593" ph="&lt;table.../&gt;" />
+                <marker date="1526716514997" expanded="true" signature="861:1069" ph="&lt;thead.../&gt;" />
+                <marker date="1526716514997" expanded="true" signature="881:1048" ph="&lt;tr.../&gt;" />
+                <marker date="1526716514997" expanded="true" signature="1082:1576" ph="&lt;tbody.../&gt;" />
+                <marker date="1526716514997" expanded="true" signature="1102:1555" ph="@..." />
+                <marker date="1526716514997" expanded="true" signature="1134:1555" ph="{...}" />
+                <marker date="1526716514997" expanded="true" signature="1165:1541" ph="&lt;tr.../&gt;" />
+                <marker date="1526716514997" expanded="true" signature="1190:1261" ph="&lt;td.../&gt;" />
+                <marker date="1526716514997" expanded="true" signature="1282:1387" ph="&lt;td.../&gt;" />
+                <marker date="1526716514997" expanded="true" signature="1408:1519" ph="&lt;td.../&gt;" />
+                <marker date="1526716514997" expanded="true" signature="1603:1739" ph="@*...*@" />
+                <marker date="1526716514997" expanded="true" signature="1748:1790" ph="&lt;ul.../&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Web.config" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qssWeb/Web.config">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="44" column="111" selection-start-line="44" selection-start-column="111" selection-end-line="44" selection-end-column="111" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseController.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/qssWeb/Controllers/BaseController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <folding>
+                <marker date="1526719575601" expanded="true" signature="51:421" ph="{...}" />
+                <marker date="1526719575601" expanded="true" signature="100:417" ph="{...}" />
+                <marker date="1526719575601" expanded="true" signature="194:409" ph="{...}" />
+                <marker date="1526719575601" expanded="true" signature="303:397" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qssWeb/Models/User.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding>
+                <marker date="1522918981113" expanded="true" signature="6:111" ph="..." />
+                <marker date="1522918981113" expanded="true" signature="159:301" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Questionnaire.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qssWeb/Models/Questionnaire.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+              <folding>
+                <marker date="1525946097919" expanded="false" signature="6:58" ph="..." />
+                <marker date="1525946097919" expanded="true" signature="116:411" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SurveyController.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qssWeb/Controllers/SurveyController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+              <folding>
+                <marker date="1526095581321" expanded="false" signature="6:112" ph="..." />
+                <marker date="1526095581321" expanded="true" signature="191:1384" ph="{...}" />
+                <marker date="1526095581321" expanded="true" signature="248:716" ph="{...}" />
+                <marker date="1526095581321" expanded="true" signature="438:510" ph="{...}" />
+                <marker date="1526095581321" expanded="true" signature="763:810" ph="{...}" />
+                <marker date="1526095581321" expanded="true" signature="868:1360" ph="{...}" />
+                <marker date="1526095581321" expanded="true" signature="1227:1298" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>surveyInfo</find>
+      <find>.navbar-de</find>
+      <find>question-editor-option</find>
+    </findStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/qssWeb/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Models/ResultItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Models/Option.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Models/Question.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Utils/Crypt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Models/QssDBContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Models/Result.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Models/Wenjuan.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Models/Questionnaire.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Views/Web.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Views/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Views/Home/Contact.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Views/Home/About.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Views/User/ChangePassword.cshtml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Views/User/Login.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Views/User/Index.cshtml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Views/User/Register.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Views/Survey/Success.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Views/Survey/Index.cshtml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Views/Wenjuan/ViewResult.cshtml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Views/Wenjuan/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/App.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Views/Wenjuan/ViewResults.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Views/Wenjuan/Result.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/App_Start/RouteConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Web.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Views/Wenjuan/Create.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/App_Start/WebApiConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Views/Wenjuan/Edit.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Controllers/SurveyController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Controllers/BaseController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Controllers/WenjuanController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/qssWeb/Controllers/UserController.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/qssWeb/Views/Home/Contact.cshtml" />
+        <option value="$PROJECT_DIR$/qssWeb/Views/Home/Login.cshtml" />
+        <option value="$PROJECT_DIR$/qssWeb/Utils/Cryptedcs.cs" />
+        <option value="$PROJECT_DIR$/qssWeb/Utils/Crypt.cs" />
+        <option value="$PROJECT_DIR$/qssWeb/Views/Web.config" />
+        <option value="$PROJECT_DIR$/qssWeb/App_Start/RouteConfig.cs" />
+        <option value="$PROJECT_DIR$/qssWeb/Models/User.cs" />
+        <option value="$PROJECT_DIR$/qssWeb/Scripts/site.js" />
+        <option value="$PROJECT_DIR$/qssWeb/Content/font-awesome.min.css" />
+        <option value="$PROJECT_DIR$/qssWeb/Views/Wenjuan/post.json" />
+        <option value="$PROJECT_DIR$/qssWeb/Models/Questionnaires.cs" />
+        <option value="$PROJECT_DIR$/qssWeb/Views/Home/Survey.cshtml" />
+        <option value="$PROJECT_DIR$/qssWeb/Views/Wenjuan/Editor.cshtml" />
+        <option value="$PROJECT_DIR$/qssWeb/Models/QssDBContext.cs" />
+        <option value="$PROJECT_DIR$/qssWeb/Models/ResultItem.cs" />
+        <option value="$PROJECT_DIR$/qssWeb/Models/Questionnaire.cs" />
+        <option value="$PROJECT_DIR$/qssWeb/Scripts/wenjuan.js" />
+        <option value="$PROJECT_DIR$/qssWeb/Content/site.css" />
+        <option value="$PROJECT_DIR$/qssWeb/Models/Wenjuan.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/029de284-fbcf-42dd-b2bd-d6e6e11ff8c2/console_1.sql" />
+        <option value="$PROJECT_DIR$/qssWeb/Models/Question.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/029de284-fbcf-42dd-b2bd-d6e6e11ff8c2/console_2.sql" />
+        <option value="$PROJECT_DIR$/qssWeb/Controllers/HomeController.cs" />
+        <option value="$PROJECT_DIR$/qssWeb/Models/Option.cs" />
+        <option value="$PROJECT_DIR$/qssWeb/Controllers/SurveyController.cs" />
+        <option value="$PROJECT_DIR$/qssWeb/Views/Survey/Success.cshtml" />
+        <option value="$PROJECT_DIR$/qssWeb/Views/Wenjuan/ViewResult.cshtml" />
+        <option value="$PROJECT_DIR$/qssWeb/Views/Wenjuan/Result.cshtml" />
+        <option value="$PROJECT_DIR$/qssWeb/Controllers/WenjuanController.cs" />
+        <option value="$PROJECT_DIR$/qssWeb/Views/Wenjuan/Create.cshtml" />
+        <option value="$PROJECT_DIR$/qssWeb/Views/Wenjuan/Edit.cshtml" />
+        <option value="$PROJECT_DIR$/qssWeb/Views/User/Index.cshtml" />
+        <option value="$PROJECT_DIR$/qssWeb/Views/User/Register.cshtml" />
+        <option value="$PROJECT_DIR$/qssWeb/Views/Wenjuan/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/qssWeb/Views/User/Login.cshtml" />
+        <option value="$PROJECT_DIR$/qssWeb/Controllers/UserController.cs" />
+        <option value="$PROJECT_DIR$/qssWeb/Views/User/ChangePassword.cshtml" />
+        <option value="$PROJECT_DIR$/qssWeb/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/qssWeb/Views/Survey/Index.cshtml" />
+        <option value="$PROJECT_DIR$/qssWeb/Models/Result.cs" />
+        <option value="$PROJECT_DIR$/qssWeb/Views/Wenjuan/ViewResults.cshtml" />
+        <option value="$PROJECT_DIR$/qssWeb/Web.config" />
+        <option value="$PROJECT_DIR$/qssWeb/Controllers/BaseController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="93" />
+    <option name="y" value="137" />
+    <option name="width" value="1390" />
+    <option name="height" value="998" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="qssWeb (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="ToolWindowDatabase.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="SQL Server (Microsoft)" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="/usr/lib/mono/4.5/xsp4.exe" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="tasks" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="/usr/lib/mono/4.5/xsp4.exe" />
+      <option name="PROGRAM_PARAMETERS" value="--address=0.0.0.0 --port=5000" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/qssWeb" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="MONO_MANAGED_WATCHER" value="y" />
+      </envs>
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/qssWeb/qssWeb.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="0" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Web" />
+      <option name="PROJECT_TFM" value="" />
+      <browser url="http://127.0.0.1:5000" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ddd26e2-0131-4e6e-9957-3d78806e5582" name="Default" comment="" />
+      <created>1522684582952</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1522684582952</updated>
+      <workItem from="1522684586498" duration="2247000" />
+      <workItem from="1522732178271" duration="16197000" />
+      <workItem from="1522898708048" duration="19713000" />
+      <workItem from="1522921209292" duration="8367000" />
+      <workItem from="1522932035100" duration="7483000" />
+      <workItem from="1522979483571" duration="15095000" />
+      <workItem from="1523068017921" duration="10436000" />
+      <workItem from="1523166038186" duration="12567000" />
+      <workItem from="1524204330326" duration="12778000" />
+      <workItem from="1524810124825" duration="11165000" />
+      <workItem from="1525008391915" duration="3618000" />
+      <workItem from="1525412722937" duration="30049000" />
+      <workItem from="1525446962600" duration="4860000" />
+      <workItem from="1525871626801" duration="2362000" />
+      <workItem from="1525945010041" duration="13085000" />
+      <workItem from="1526009642010" duration="19855000" />
+      <workItem from="1526046091106" duration="13988000" />
+      <workItem from="1526616021737" duration="9047000" />
+      <workItem from="1526714192573" duration="2771000" />
+      <workItem from="1526718075016" duration="1065000" />
+      <workItem from="1529077210088" duration="512000" />
+      <workItem from="1529077798229" duration="413000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="217673000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.3296875" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014641" side_tool="true" weight="0.23028392" />
+      <window_info anchor="bottom" id="Unit Tests" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="REST Client" order="11" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" weight="0.15343347" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="NuGet" order="13" weight="0.32980973" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18443497" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" weight="0.32980973" />
+      <window_info anchor="bottom" id="Build" order="15" weight="0.32875264" />
+      <window_info anchor="right" x="786" y="80" width="347" height="946" id="Database" order="4" sideWeight="0.49947917" weight="0.24635416" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.47885835" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection Results" order="16" weight="0.329653" />
+      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32980973" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="1" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="NuGet" order="14" weight="0.32980973" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" weight="0.32980973" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49895832" visible="true" weight="0.26744187" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.20677084" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Inspection Results" order="17" weight="0.329653" />
+      <window_info anchor="bottom" id="Unit Tests" order="9" />
+      <window_info anchor="bottom" id="REST Client" order="11" />
+      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.3296875" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.47885835" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50104165" side_tool="true" weight="0.32875264" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="16" weight="0.32875264" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32980973" />
+      <window_info anchor="right" x="786" y="80" width="347" height="946" id="Database" order="4" sideWeight="0.49947917" visible="true" weight="0.24635416" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" isUnityUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="18" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8F2C4843-0728-4B51-944A-1A13A14C0266/15/fa9b29ae/ThreadPoolWorkQueue.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8F2C4843-0728-4B51-944A-1A13A14C0266/1f/bc6f8c46/ExecutionContext.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/79D7580B-4E46-4872-86A5-F8386A98413D/c4/f0f7fe87/HttpApplication.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/41/2de1085a/MvcHandler.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/b8/1b921d8d/Controller.cs" />
+    <entry file="file://$PROJECT_DIR$/qssWeb/Views/_ViewStart.cshtml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Views/Home/Index.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Views/Home/About.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Views/Home/Contact.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Models/QssDBContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/76/88d9be2c/AsyncControllerActionInvoker.cs" />
+    <entry file="file://$PROJECT_DIR$/qssWeb/Content/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="419" column="2" lean-forward="true" selection-start-line="419" selection-start-column="2" selection-end-line="419" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/029de284-fbcf-42dd-b2bd-d6e6e11ff8c2/console_1.sql" />
+    <entry file="file://$PROJECT_DIR$/qssWeb/Models/Question.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://029de284-fbcf-42dd-b2bd-d6e6e11ff8c2/database/qss/schema/dbo/table/results">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/029de284-fbcf-42dd-b2bd-d6e6e11ff8c2/console_2.sql" />
+    <entry file="das://029de284-fbcf-42dd-b2bd-d6e6e11ff8c2/database/qss/schema/dbo/table/resultItems">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Controllers/HomeController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Models/Option.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Views/Survey/Success.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1218">
+          <caret line="58" column="61" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://029de284-fbcf-42dd-b2bd-d6e6e11ff8c2/database/qss/schema/dbo/table/questions">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Scripts/wenjuan.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1323">
+          <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Views/Wenjuan/ViewResult.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2814">
+          <caret line="134" column="123" selection-start-line="134" selection-start-column="123" selection-end-line="134" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://029de284-fbcf-42dd-b2bd-d6e6e11ff8c2/database/qss/schema/dbo/table/options">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://029de284-fbcf-42dd-b2bd-d6e6e11ff8c2/database/qss/schema/dbo/table/questionnaires">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://029de284-fbcf-42dd-b2bd-d6e6e11ff8c2/database/qss/schema/dbo/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Views/Wenjuan/Create.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="315" column="24" selection-start-line="315" selection-start-column="24" selection-end-line="315" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Views/Wenjuan/Edit.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="399" column="38" selection-start-line="399" selection-start-column="38" selection-end-line="399" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Utils/Crypt.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Views/Wenjuan/_Layout.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Views/User/Register.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Views/User/Index.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Views/User/Login.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="31" column="59" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/App.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Views/Web.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Properties/AssemblyInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Views/Shared/_Layout.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Views/User/ChangePassword.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Views/Wenjuan/Result.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3248">
+          <caret line="204" column="72" selection-start-line="204" selection-start-column="72" selection-end-line="204" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Views/Survey/Index.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4158">
+          <caret line="199" column="24" selection-start-line="199" selection-start-column="24" selection-end-line="199" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Controllers/UserController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2625">
+          <caret line="129" column="30" selection-start-line="129" selection-start-column="30" selection-end-line="129" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Models/User.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <marker date="1522918981113" expanded="true" signature="6:111" ph="..." />
+            <marker date="1522918981113" expanded="true" signature="159:301" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Controllers/SurveyController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+          <folding>
+            <marker date="1526095581321" expanded="false" signature="6:112" ph="..." />
+            <marker date="1526095581321" expanded="true" signature="191:1384" ph="{...}" />
+            <marker date="1526095581321" expanded="true" signature="248:716" ph="{...}" />
+            <marker date="1526095581321" expanded="true" signature="438:510" ph="{...}" />
+            <marker date="1526095581321" expanded="true" signature="763:810" ph="{...}" />
+            <marker date="1526095581321" expanded="true" signature="868:1360" ph="{...}" />
+            <marker date="1526095581321" expanded="true" signature="1227:1298" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Controllers/WenjuanController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3165">
+          <caret line="219" column="53" selection-start-line="219" selection-start-column="53" selection-end-line="219" selection-end-column="53" />
+          <folding>
+            <marker date="1526617491519" expanded="false" signature="6:245" ph="..." />
+            <marker date="1526617491519" expanded="true" signature="275:9043" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="329:9041" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="441:541" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="579:626" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="681:1499" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="1016:1322" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="1143:1261" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="1535:2230" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="1629:1730" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="1819:1920" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="1980:2081" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="2302:3666" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="2527:2590" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="2696:2759" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="2788:3623" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="3015:3246" ph="/* db.Questionnaires ... */" />
+            <marker date="1526617491519" expanded="true" signature="3703:6295" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="3797:3898" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="3985:4086" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="4145:4246" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="4836:5978" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="4990:5057" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="5148:5630" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="5227:5612" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="5366:5463" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="5651:5929" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="5781:5856" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="6338:7078" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="6432:6533" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="6620:6721" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="6780:6881" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="7128:9026" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="7222:7323" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="7482:7583" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="7705:7806" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="8071:8905" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="8392:8474" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="8512:8891" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="8645:8873" ph="{...}" />
+            <marker date="1526617491519" expanded="true" signature="8721:8826" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Models/Wenjuan.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+          <folding>
+            <marker date="1526020777201" expanded="false" signature="6:283" ph="..." />
+            <marker date="1526020777201" expanded="true" signature="335:4971" ph="{...}" />
+            <marker date="1526020777201" expanded="true" signature="897:930" ph="{...}" />
+            <marker date="1526020777201" expanded="true" signature="983:1684" ph="{...}" />
+            <marker date="1526020777201" expanded="true" signature="1569:1674" ph="{...}" />
+            <marker date="1526020777201" expanded="true" signature="1737:1945" ph="{...}" />
+            <marker date="1526020777201" expanded="true" signature="1973:2597" ph="{...}" />
+            <marker date="1526020777201" expanded="true" signature="2047:2168" ph="{...}" />
+            <marker date="1526020777201" expanded="true" signature="2488:2587" ph="{...}" />
+            <marker date="1526020777201" expanded="true" signature="2713:3209" ph="{...}" />
+            <marker date="1526020777201" expanded="true" signature="2986:3043" ph="{...}" />
+            <marker date="1526020777201" expanded="true" signature="3263:3738" ph="{...}" />
+            <marker date="1526020777201" expanded="true" signature="3561:3613" ph="{...}" />
+            <marker date="1526020777201" expanded="true" signature="3818:4783" ph="{...}" />
+            <marker date="1526020777201" expanded="true" signature="4234:4743" ph="{...}" />
+            <marker date="1526020777201" expanded="true" signature="4472:4642" ph="{...}" />
+            <marker date="1526020777201" expanded="true" signature="4820:4956" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Models/Questionnaire.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding>
+            <marker date="1525946097919" expanded="false" signature="6:58" ph="..." />
+            <marker date="1525946097919" expanded="true" signature="116:411" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Models/Result.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <marker date="1526716052045" expanded="true" signature="6:189" ph="..." />
+            <marker date="1526716052045" expanded="true" signature="240:1561" ph="{...}" />
+            <marker date="1526716052045" expanded="true" signature="550:984" ph="{...}" />
+            <marker date="1526716052045" expanded="true" signature="816:940" ph="{...}" />
+            <marker date="1526716052045" expanded="true" signature="1058:1271" ph="{...}" />
+            <marker date="1526716052045" expanded="true" signature="1331:1546" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Models/ResultItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <marker date="1525449293845" expanded="true" signature="99:286" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Views/Wenjuan/ViewResults.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="73" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
+          <folding>
+            <marker date="1526716514997" expanded="true" signature="36:357" ph="@..." />
+            <marker date="1526716514997" expanded="true" signature="359:507" ph="@{...}" />
+            <marker date="1526716514997" expanded="true" signature="378:505" ph="&lt;style.../&gt;" />
+            <marker date="1526716514997" expanded="true" signature="537:750" ph="&lt;ul.../&gt;" />
+            <marker date="1526716514997" expanded="true" signature="756:1802" ph="&lt;div.../&gt;" />
+            <marker date="1526716514997" expanded="true" signature="802:1593" ph="&lt;table.../&gt;" />
+            <marker date="1526716514997" expanded="true" signature="861:1069" ph="&lt;thead.../&gt;" />
+            <marker date="1526716514997" expanded="true" signature="881:1048" ph="&lt;tr.../&gt;" />
+            <marker date="1526716514997" expanded="true" signature="1082:1576" ph="&lt;tbody.../&gt;" />
+            <marker date="1526716514997" expanded="true" signature="1102:1555" ph="@..." />
+            <marker date="1526716514997" expanded="true" signature="1134:1555" ph="{...}" />
+            <marker date="1526716514997" expanded="true" signature="1165:1541" ph="&lt;tr.../&gt;" />
+            <marker date="1526716514997" expanded="true" signature="1190:1261" ph="&lt;td.../&gt;" />
+            <marker date="1526716514997" expanded="true" signature="1282:1387" ph="&lt;td.../&gt;" />
+            <marker date="1526716514997" expanded="true" signature="1408:1519" ph="&lt;td.../&gt;" />
+            <marker date="1526716514997" expanded="true" signature="1603:1739" ph="@*...*@" />
+            <marker date="1526716514997" expanded="true" signature="1748:1790" ph="&lt;ul.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Web.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="111" selection-start-line="44" selection-start-column="111" selection-end-line="44" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qssWeb/Controllers/BaseController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <marker date="1526719575601" expanded="true" signature="51:421" ph="{...}" />
+            <marker date="1526719575601" expanded="true" signature="100:417" ph="{...}" />
+            <marker date="1526719575601" expanded="true" signature="194:409" ph="{...}" />
+            <marker date="1526719575601" expanded="true" signature="303:397" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

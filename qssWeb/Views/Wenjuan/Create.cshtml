@@ -1,0 +1,323 @@
+﻿@*@model *@
+@{
+    ViewBag.Title = "创建新问卷";
+    Layout = "_Layout.cshtml";
+    ViewData["bodyAttrs"] = "style=\"background: url(/images/login-background.jpg) no-repeat scroll 0 0px;background-size: cover;\"";
+}
+
+@section css
+{
+    <style>
+        .create-btn {
+            border: yellowgreen;
+            background: dodgerblue;
+            border-radius: 16px;
+            color: white;
+            font-size: 0.6em;
+            margin-top: 0
+        }
+
+        #editorPage {
+            padding-bottom: 5px;
+            padding-left: 5%;
+            padding-right: 5%;
+            margin: 0px 2px 0px 0px;
+            overflow: auto;
+            background: rgb(255, 255, 255);
+            width: 100%;
+            position: relative;
+            height: 818px;
+        }
+
+        #surveyInfo {
+            font-size: 1.2em;
+            margin-top: 16px;
+        }
+
+        .question {
+            padding: 6px;
+            font-size: 1em;
+        }
+
+        .question:hover {
+            border: 1px solid violet;
+            border-radius: 6px;
+            background: #f9f9f9;
+        }
+        .question .to-edit-question { display: none; }
+
+        .question:hover .to-edit-question { display: block; }
+        .btn-circle {
+            border: gray;
+            width: 24px;
+            height: 24px;
+            font-size: 12px;
+            margin-left: 9px;
+            padding: 0;
+            padding-right: 0.7px;
+            text-align: center;
+            -ms-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        .question[question-type=blank] .options-editor { display: none; }
+
+        .question .error-msg { color: red; }
+
+        .question-editing .question-preview { display: none; }
+
+        .question-editing .question-editor { display: block; }
+
+        .question-completed .question-editor { display: none; }
+
+        .question-completed .question-preview { display: block; }
+
+        .question-type-select {
+            padding-top: 6px;
+            padding-bottom: 9px;
+            border-radius: 5px;
+            background-color: white;
+            font-size: 1em;
+        }
+
+        .pre-question-title-line {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .question-editing .options-editor ul:nth-child(1) .btn-up { }
+        
+    </style>
+}
+
+
+<div class="container">
+    <ul id="toolbar" class="breadcrumb" style="height: 46px; font-size: 1.6em">
+        <li class="active">创建新问卷</li>
+
+        <div class="pull-right">
+            <div class="btn-group">
+
+                <div class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                    添加问题
+                    <i class="fa fa-plus"></i>
+                </div>
+
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="javascript:addOneQuestion('single');"><i class="fa fa-circle"></i> 单选题</a>
+                    </li>
+                    <li>
+                        <a href="javascript:addOneQuestion('multi');"><i class="fa fa-check"></i> 多选题</a>
+                    </li>
+                    <li>
+                        <a href="javascript:addOneQuestion('blank');"><i class="fa fa-edit"></i> 填空题</a>
+                    </li>
+                    @*<li class="divider"></li>
+                    <li><a href="#"><i class="i"></i> Make admin</a></li>*@
+                </ul>
+            </div>
+            <a href="javascript:submit(this)" title="保存问卷" class="btn btn-default create-btn ">
+                <i class="fa fa-save"></i>保存问卷
+            </a>
+        </div>
+    </ul>
+    <div id="editorPage">
+        <div align="center">
+            <h2 id="surveyTitle" data-toggle="modal" data-target="#myModal" style="cursor: pointer">未命名</h2>
+        </div>
+        <div class="lead" id="surveyInfo"></div>
+
+        <hr/>
+
+        <div class="surveyPage" id="surveyPage">
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    问卷基本设置
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon">问卷标题:</span>
+                    <input id="input_surveyTitle" type="text" class="form-control" placeholder="请输入问卷标题">
+                </div>
+                <br/>
+                <div class="input-group input-group-lg" style="width: 100%; height: 90px">
+                    <span class="input-group-addon">问卷描述:</span>
+                    <textarea class="form-control" style="height: 90px; width: 100%;" rows="3" id="input_surveyInfo" type="text"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    关闭
+                </button>
+                <button type="button" class="btn btn-primary" onclick="setSurveyInfo()">
+                    提交
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="question" question-id="1" id="question-exmple" style="display: none">
+
+    <div class="question-preview">
+        <div class="pre-question-title-line">
+            <span class="pre-question-num"></span>
+
+            <span class="pre-question-title"></span>
+
+            <span class="pre-question-tag" style="color: red; display: none;">*</span>
+        </div>
+        <div class="pre-question-options list-unstyled" style="margin-left: 2em;margin-top: 0.6em">
+            
+        </div>
+        
+        <div class="to-edit-question" style="height: 28px">
+            <div class="question-editor-btns pull-right">
+                <button onclick="deleteOneQuestion(this)" type="button" class="btn btn-danger">删除</button>
+                <button onclick="editQuestion(this)" type="button" class="btn btn-success">编辑</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="question-editor">
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon question-title">问题1:</span>
+            <input id="" type="text" class="form-control input-question-title" placeholder="请输入问题">
+        </div>
+        <div class="pull-right error-msg">
+
+        </div>
+        <br/>
+        <div class="options-editor">
+            <ul class="list-group">
+                @for (var i = 2; i > 0; i--)
+                {
+                    <li class="list-group-item form-inline">
+                        <input style="width: 70%" id="" type="text" class="form-control question-editor-option" placeholder="请输入选项">
+                        <button type="button" class="btn btn-circle btn-danger btn-del" onclick="removeOption(this)">
+                            <i style="font-size: 1em" class="fa fa-trash"></i>
+                        </button>
+                        <button type="button" class="btn btn-circle btn-primary btn-add" onclick="addOption(this)">
+                            <i style="font-size: 1em" class="fa fa-plus"></i>
+                        </button>
+                        <button type="button" class="btn btn-circle btn-success btn-up" onclick="moveOptionUp(this)">
+                            <i style="font-size: 1em" class="fa fa-arrow-circle-up"></i>
+                        </button>
+                        <button type="button" class="btn btn-circle btn-success btn-down" onclick="moveOptionDown(this)">
+                            <i style="font-size: 1em" class="fa fa-arrow-circle-down"></i>
+                        </button>
+                    </li>
+                }
+            </ul>
+        </div>
+
+        <div class="form-inline" style="padding-left: 0; margin-left: 0">
+
+            <select class="col-lg-2 question-type-select" onchange="changeQuestionType(this)">
+                <option value="single">单选题</option>
+                <option value="multi">多选题</option>
+                <option value="blank">填空题</option>
+            </select>
+
+            <div class="checkbox" style="font-size: 1em; margin-left: 1.6em; margin-top: 0.3em;">
+                <label class="checkbox-inline">
+                    <input class="checkbox question-require-checkbox" type="checkbox"> 必答题
+                </label>
+            </div>
+            @*<label class="checkbox-inline checkbox-custom checkbox-default">
+                            <input type="checkbox" id="inlineCheckbox1" value="option1">必答题
+                        </label>*@
+            <div class="question-editor-btns pull-right">
+                <button onclick="deleteOneQuestion(this)" type="button" class="btn btn-danger">删除</button>
+                <button onclick="saveOneQuestion(this)" type="button" class="btn btn-success">完成</button>
+            </div>
+        </div>
+    </div>
+
+
+    <br/>
+</div>
+<div style="display: none">
+    <li class="list-group-item form-inline" id="option-example">
+        <input style="width: 70%" id="" type="text" class="form-control question-editor-option" placeholder="请输入选项">
+        <button type="button" class="btn btn-circle btn-danger btn-del" onclick="removeOption(this)">
+            <i style="font-size: 1em" class="fa fa-trash"></i>
+        </button>
+        <button type="button" class="btn btn-circle btn-primary btn-add" onclick="addOption(this)">
+            <i style="font-size: 1em" class="fa fa-plus"></i>
+        </button>
+        <button type="button" class="btn btn-circle btn-success btn-up" onclick="moveOptionUp(this)">
+            <i style="font-size: 1em" class="fa fa-arrow-circle-up"></i>
+        </button>
+        <button type="button" class="btn btn-circle btn-success btn-down" onclick="moveOptionDown(this)">
+            <i style="font-size: 1em" class="fa fa-arrow-circle-down"></i>
+        </button>
+    </li>
+</div>
+
+@section scripts{
+    <script type="text/javascript" src="~/Scripts/wenjuan.js"></script>
+    <script type="text/javascript">
+        var surveyTitle = "";
+        var surveyInfo = "";
+        var questionCount = 0;
+        Window.onload = function() {
+            $("#input_surveyInfo").val(surveyInfo);
+            $("#input_surveyTitle").val(surveyTitle);
+        }
+        function submit(item) {
+            var wenjuan = {};
+            wenjuan.title = $("#surveyTitle").text();
+            wenjuan.description = $("#surveyInfo").text();
+            var questionDivs = $(".question");
+            var questions = [];
+            for (var i = 0; i < questionDivs.length; i++) {
+                var questionDiv = questionDivs.eq(i);
+                var required = questionDiv.find(".pre-question-tag").attr("data");
+                var type = questionDiv.find(".pre-question-tag").attr("q-type");
+                var question = {};
+                var options = [];
+                var optionDivs = questionDiv.first().find(".pre-question-options li");
+                for (var j = 0; j < optionDivs.length; j++) {
+                    var optionDiv = optionDivs.eq(j).first();
+                    options.push({ optionContent: optionDiv.text() });
+                }
+                question.question = questionDiv.first().find(".pre-question-title").text();
+                question.options = options;
+                question.type = type;
+                question.required = required;
+                questions.push(question);
+            }
+            wenjuan.questions = questions;
+            $.ajax({
+                type: "POST",
+                url: "/Wenjuan/Save",
+                data: JSON.stringify(wenjuan),
+                contentType: "application/json",
+                dataType: "json",
+                success: function(msg) {
+                    var obj = JSON.parse(msg);
+                    if (obj.status == 1) {
+                        alert("保存成功!");
+                        window.location.href = "/User/";
+                    }
+                }
+            });
+        }
+    </script>
+}

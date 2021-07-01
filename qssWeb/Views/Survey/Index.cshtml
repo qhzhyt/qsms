@@ -1,0 +1,239 @@
+﻿@using System.Diagnostics
+@using qssWeb.Models
+@model qssWeb.Models.Wenjuan
+
+@{
+    var wenjuan = ViewData["wenjuan"] as Wenjuan;
+    Debug.Assert(wenjuan != null, "wenjuan != null");
+    ViewBag.Title = wenjuan.title;
+    Layout = null;
+    /*{background-image:url(../images/css_tutorials/background.jpg); background-repeat:no-repeat; background-attachment:fixed}*/
+}
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - WebApplication</title>
+    @* <link rel="stylesheet" href="~/Content/site.css"/> *@
+    <link rel="stylesheet" href="~/Content/bootstrap.css"/>
+    <link rel="stylesheet" href="~/Content/bootstrap-theme.css"/>
+    <link rel="stylesheet" href="~/Content/bootstrap-select.min.css"/>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-image: url(~/images/login-background.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .question {
+        margin-top: 6px;
+        margin-bottom: 15px;
+    }
+
+    .question-num { font-size: 1.2em; }
+
+    .question-title { font-size: 1.2em; }
+
+    .question-tag { font-size: 1.2em; }
+
+    .option-list {
+        margin-top: 9px;
+        margin-bottom: 6px;
+        margin-left: 2em;
+    }
+
+    body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    /*html,body{height:100%;margin:0;}*/
+
+    /* Set padding to keep content from hitting the edges */
+
+    .body-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .bottom-bar { margin-bottom: 20px; }
+</style>
+<body>
+<div class="container body-content col-lg-6 col-lg-offset-3" style="background-color: white; border-radius: 9px">
+    <div align="center">
+        <h2 id="surveyTitle">@wenjuan.title</h2>
+    </div>
+
+    <p>@wenjuan.description</p>
+
+    <hr/>
+    @*<div class="checkbox">
+        <label>
+            <input type="checkbox">请打勾
+        </label>
+    </div>*@
+    <div class="surveyPage" id="surveyPage">
+        @{
+            var id = 1;
+            foreach (var question in wenjuan.questions)
+            {
+                <div class="question" id="question-@id" question-id="@question.qId" question-type="@question.type" require="@question.required">
+                    <span class="question-num">@id、</span>
+                    <span class="question-title">@question.question</span>
+                    @if (question.required.Equals("Y"))
+                    {
+                        <span class="question-tag" style="color: red; display: inline;">*</span>
+                    }
+                    <br/>
+                    <ul class="list-unstyled option-list">
+                        @{
+                            id++;
+                            var type = "checkbox";
+                            if (question.type == 0)
+                            {
+                                <div class="form-group">
+                                    <input type="text" class="form-control content" id="name" placeholder="请输入内容">
+                                </div>
+                            }
+                            else
+                            {
+                                if (question.type == 2)
+                                {
+                                    var value = 1;
+                                    foreach (var option in question.options)
+                                    {
+                                        value++;
+                                        <li>
+                                            <div class="radio">
+                                                <label>
+                                                    <input class="option-item" type="radio" name="radio-@id" id="optionsRadios1" value="@option.oId"> @option.optionContent
+                                                </label>
+                                            </div>
+                                        </li>
+                                    }
+                                }
+                                else
+                                {
+                                    foreach (var option in question.options)
+                                    {
+                                        <li>
+                                            <div class="checkbox">
+                                                <label class="checkbox-inline">
+                                                    <input class="option-item" type="checkbox" value="@option.oId"> @option.optionContent
+                                                </label>
+                                            </div>
+
+                                        </li>
+                                    }
+                                }
+                            }
+                        }
+
+                    </ul>
+                </div>
+            }
+        }
+        <div class="bottom-bar col-lg-2 col-lg-offset-5" align="center">
+            <button style="font-size: 1.6em" type="button" onclick="submit()" class="btn btn-warning btn-block">提交</button>
+        </div>
+    </div>
+</div>
+<environment names="Development">
+    <script type="text/javascript">
+        function mScroll(id) {
+            $("html,body").stop(true);
+            $("html,body").animate({ scrollTop: $("#" + id).offset().top }, 500);
+        }
+
+        //var questionInfos=@ViewData["questionList"];
+        function scrollToLocation(scrollToContainer) {
+            var mainContainer = $('body');
+            //scrollToContainer = mainContainer.find('.son-panel:last');//滚动到<div id="thisMainPanel">中类名为son-panel的最后一个div处
+            //scrollToContainer = mainContainer.find('.son-panel:eq(5)');//滚动到<div id="thisMainPanel">中类名为son-panel的第六个处
+            //非动画效果
+            //mainContainer.scrollTop(
+            //  scrollToContainer.offset().top - mainContainer.offset().top + mainContainer.scrollTop()
+            //);
+            //动画效果
+            mainContainer.animate({
+                    scrollTop: scrollToContainer.offset().top - mainContainer.offset().top + mainContainer.scrollTop()
+                },
+                2000); //2秒滑动到指定位置
+        }
+
+        function submit() {
+            var data = {};
+            data.qnId = @wenjuan.qnId;
+            var questions = [];
+            var questionDivs = $(".question");
+            for (var i = 0; i < questionDivs.length; i++) {
+                var question = {};
+
+                var questionDiv = questionDivs.eq(i).first();
+
+                var questionId = questionDiv.attr("question-id");
+
+                var required = questionDiv.attr("require");
+
+                var id = questionDiv.attr("id");
+
+                console.log(required);
+
+                question.qId = questionId;
+
+                var type = questionDiv.attr("question-type");
+                if (type == 0) {
+                    var content = questionDiv.find(".option-list .content")[0].value;
+
+                    if ((content == null || content == ""||content==undefined)&& required == "Y") {
+                        mScroll(id);
+                        shakeItem(questionDiv, 10, 10, 100);
+                        return;
+                    }
+
+                    console.log(content);
+                    question.content = content;
+                    questions.push(question);
+                } else {
+                    var options = questionDiv.find(".option-list input:checked");
+                    if (options.length < 1 && required == "Y") {
+                        mScroll(id);
+                        shakeItem(questionDiv, 10, 10, 100);
+                        return;
+                    }
+                    for (var j = 0; j < options.length; j++) {
+                        var option = options[j];
+                        questions.push({ qId: question.qId, content: option.value });
+                    }
+                }
+                console.log(questionId + type);
+            }
+            data.resultItems = questions;
+            console.log(JSON.stringify(data));
+            $.ajax({
+                type: "POST",
+                url: "/Survey/Submit",
+                data: JSON.stringify(data),
+                contentType: "application/json",
+                dataType: "json",
+                success: function(msg) {
+                    var data = eval("(" + msg + ")");
+                    if (data.status==1) {
+                        window.location = "/Survey/Success";
+                    }
+
+                }
+            });
+
+        }
+    </script>
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="~/Scripts/bootstrap-select.js"></script>
+    <script type="text/javascript" src="~/Scripts/i18n/defaults-zh_CN.min.js"></script>
+    <script src="~/Scripts/site.js"></script>
+</environment>
+</body>

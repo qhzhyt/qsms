@@ -1,0 +1,207 @@
+﻿@using qssWeb.Models
+@model qssWeb.Models.User
+
+@{
+    ViewBag.Title = "用户信息";
+    ViewData["bodyAttrs"] = "style=\"background: url(/images/login-background.jpg) no-repeat scroll 0 0px;background-size: cover;\"";
+    ViewData["navList"] =
+        /*"<li><a href=\"/Home/About\">About</a></li>" +
+        "<li><a href=\"/Home/Contact\">Contact</a></li>" +*/
+        "<li class=\"dropdown\">" +
+        "<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">" +
+        ViewData["userName"] +
+        "<b class=\"caret\"></b>" +
+        "</a>" +
+        "<ul class=\"dropdown-menu\">" +
+        "<li><a href=\"/User/ChangePassword\">修改密码</a></li>" +
+        "</ul>" +
+        "<li><a href=\"/User/Logout\">退出</a></li>";
+}
+
+<style>
+    .create-btn {
+        border: yellowgreen;
+        background: orangered;
+        border-radius: 16px;
+        color: white;
+        font-size: 1em;
+        margin-top: 16px;
+    }
+</style>
+
+<a href="/Wenjuan/Create" title="创建新问卷" class="btn btn-default pull-left create-btn">
+    <i class="fa fa-plus"></i>创建问卷
+</a>
+<br/><br/>
+<hr/>
+
+
+@{
+    var wenjuans = ViewData["wenjuans"] as List<Wenjuan>;
+    foreach (var wenjuan in wenjuans)
+    {
+        var result = "../Wenjuan/Result?id=" + wenjuan.qnId;
+
+        var href = "../Survey?id=" + wenjuan.qnId;
+
+        var resultCount = wenjuan.GetResultCount();
+
+
+        <div id="wenjuan-@wenjuan.qnId" resultCount="@resultCount">
+            <div class="list-group">
+                <div class="list-group-item">
+                    @if (resultCount > 0)
+                    {
+                        <a href="@result" title="查看统计信息">
+                            <span style="font-size: 1.5em;" class="list-group-item-heading">
+                                @wenjuan.title <span style="font-size: 0.9em; color: gray;">@Html.Raw(" ID:") @wenjuan.qnId</span>
+                            </span>
+                        </a>
+                    }
+                    else
+                    {
+                        <p style="font-size: 1.5em; color: black; display: inline" class="list-group-item-heading">
+                            @wenjuan.title <span style="font-size: 0.9em; color: gray;">@Html.Raw(" ID:") @wenjuan.qnId</span>
+                        </p>
+                    }
+
+                    @if (wenjuan.released == "Y")
+                    {
+                        <span style="color: orangered" class="pull-right">
+                            <i class="fa fa-circle"></i>收集中
+                        </span>
+                    }
+                    else
+                    {
+                        <span style="color: grey" class="pull-right">
+                            <i class="fa fa-circle"></i>未发布
+                        </span>
+                    }
+
+                </div>
+                <div class="list-group-item">
+                    <div style="font-size: 1.2em" class="wenjuan-info row">
+                        <div class="col-lg-3 col-md-3 col-sm-4">
+                            <ul class="list-unstyled">
+                                <li>创建时间:@wenjuan.createTime.Substring(0, 19)</li>
+                                <li>已 收 集:@resultCount</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-4">
+                            <ul class="list-unstyled">
+
+                                <li>问题数目:@wenjuan.questionCount</li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-4">
+                            <ul class="list-unstyled">
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div style="font-size: 1.2em">
+                        <span>调查链接:</span>
+                        @if (wenjuan.released == "Y")
+                        {
+                            <a href="@href">
+                                @href
+                            </a>
+                        }
+                        else
+                        {
+                            <span>未在收集</span>
+                        }
+
+                    </div>
+                    <div style="height: 2em;">
+                        @if (wenjuan.released == "Y")
+                        {
+                            <div class="pull-right">
+                                <button type="button" onclick="stopWenjuan(@wenjuan.qnId)" class="btn btn-warning">
+                                    <i class="fa fa-stop"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger" disabled="disabled">删除</button>
+                                <button type="button" class="btn btn-success" disabled="disabled">编辑</button>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="pull-right">
+                                <button type="button" onclick="releaseWenjuan(@wenjuan.qnId)" class="btn btn-info">
+                                    <i class="fa fa-play"></i>
+                                </button>
+                                <button type="button" onclick="delWenjuan(@wenjuan.qnId)" class="btn btn-danger">删除</button>
+                                <button type="button" onclick="editWenjuan(@wenjuan.qnId)" class="btn btn-success">编辑</button>
+                            </div>
+                        }
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    }
+}
+
+<script type="text/javascript">
+    function delWenjuan(id) {
+        var temp = confirm("该操作将会删除该问卷的所有信息，是否继续？");
+        if (!temp) {
+            return;
+        }
+        $.ajax({
+            type: "POST",
+            url: "/Wenjuan/Edit",
+            data: { action: "delete", id: id },
+            dataType: "json",
+            complete: function(msg) {
+                location.reload();
+            }
+        });
+    }
+
+    function releaseWenjuan(id) {
+        $.ajax({
+            type: "POST",
+            url: "/Wenjuan/Edit",
+            data: { action: "release", id: id },
+            dataType: "json",
+            complete: function(msg) {
+                location.reload();
+            }
+        });
+    }
+
+    function stopWenjuan(id) {
+        $.ajax({
+            type: "POST",
+            url: "/Wenjuan/Edit",
+            data: { action: "stop", id: id },
+            dataType: "json",
+            complete: function(msg) {
+                if (msg.status == 200) {
+                    location.reload();
+                } else {
+                    alert("停止失败！");
+                }
+            }
+        });
+    }
+
+    function editWenjuan(id) {
+        var count = $("#wenjuan-" + id).attr("resultCount");
+        if (count>0) {
+            var temp = confirm("该问卷已经收集了"+count+"份答卷，若编辑后重新保存将会删除该问卷的所有答卷，是否继续？");
+            if (!temp) {
+                return;
+            }
+        }
+        window.location = "/Wenjuan/Edit?id=" + id;
+    }
+
+</script>

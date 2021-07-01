@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "用户登录";
+    ViewData["bodyAttrs"] = "style=\"background: url(/images/login-background.jpg) no-repeat scroll 0 0px;background-size: cover;\"";
+    ViewData["navList"] =
+        "<li><a href=\"/Home/About\">About</a></li>" +
+        "<li><a href=\"/Home/Contact\">Contact</a></li>";// +
+        //"<li><a href=\"/User/Login\">登录</a> </li>";
+}
+<style>
+    .form-horizontal .reset-pass {
+        float: left;
+        width: 60px;
+        height: 20px;
+        border-radius: 15%;
+        position: relative;
+        margin: 5px 0 0 5px;
+    }
+    
+</style>
+<div class="login-bg" style="padding: 20px 0;margin-top: 60px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-5">
+                <form class="form-horizontal" action="#" method="post" onsubmit="return CheckLogin()">
+                    <div class="heading">
+                        <span>用户登录</span>
+                        <br/>
+                        <span style="font-size: 16px;margin-right: 24px" class="pull-right"><a href="Register">立即注册>></a></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input value="@ViewData["userName"]" type="text" name="userName" class="form-control" id="userName" placeholder="用户名">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control" id="password" placeholder="密　码">
+                        <i class="fa fa-lock"></i>
+                    </div>
+                    <div class="form-group">
+
+                        @*<div class="reset-pass">
+                            <a href="ResetPassword">忘记密码</a>
+                        </div>*@
+                        
+                        <div class="pull-right" id="tips">@Html.Raw(ViewData["loginMsg"])</div>
+                        @*<span class="text">Remember me</span>*@
+                        @*<button type="submit" class="btn btn-default">登录</button>*@
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-default form-control" onclick="CheckLogin()">登录</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function CheckLogin()
+    {
+        if ($("#userName").val().length === 0) {
+            $("#tips").html("<font color='red'>用户名不能为空!</font>");
+            return false;
+        }
+        if ($("#password").val().length === 0) {
+            $("#tips").html("<font color='red'>密码不能为空!</font>");
+            return false;
+        }
+        //$("#dataForm").submit();
+        return true;
+    }
+</script>
