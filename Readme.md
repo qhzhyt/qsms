@@ -2,7 +2,7 @@
 
 
 ### 概要
-本系统采用`Asp.Net` MVC架构开发，前端使用了bootstrap与jQuery库进行GUI布局设计，数据库采用了MS sqlserver 2012。
+本系统采用`Asp.Net` 框架开发，前端使用了bootstrap与jQuery库进行GUI布局设计，数据库采用了MS sqlserver 2012。
 
 
 ### 主要功能
